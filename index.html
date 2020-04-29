@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <title>Simple Currency Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+    <div>
+        <h1>Simple Currency Convertor</h1>
+
+        <div id="container">
+            <div>
+                <p>Amount:</p>
+            </div>
+
+            <div>
+                <p>From:</p>
+            </div>
+
+            <div>
+                &nbsp;
+            </div>
+
+            <div>
+                <p>To:</p>
+            </div>
+
+            <div>
+                &nbsp;
+            </div>
+
+            <div id="amount">
+                <input type="number" placeholder="Enter Amount" id="number" />
+            </div>
+
+            <div id="from-box">
+                <input placeholder="Pick Currency" list="from" />
+                <datalist id="from"></datalist>
+            </div>
+
+            <div id="ex-box">
+                <i class="fas fa-exchange-alt"></i>
+            </div>
+
+            <div id="to-box">
+                <input placeholder="Pick Currency" list="to" />
+                <datalist id="to"></datalist>
+            </div>
+
+            <div id="convert-box">
+                <i class="fas fa-arrow-circle-right"></i>
+            </div>
+        </div>
+        <div id="conversation-resilt">
+            <h1>For 50 EUR you can get 55 USD</h1>
+        </div>
+    </div>
+
+   
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

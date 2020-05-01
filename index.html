@@ -39,12 +39,14 @@
             </div>
 
             <div id="amount">
-                <input type="number" placeholder="Enter Amount" id="number" />
+                <input type="number" placeholder="Enter Amount" id="amount-input"/>
             </div>
 
             <div id="from-box">
-                <input placeholder="Pick Currency" list="from" />
-                <datalist id="from"></datalist>
+                <input placeholder="Pick Currency" list="from" id="from-input"/>
+                <datalist id="from">
+                    <option id="eur">EUR</option>
+                </datalist>
             </div>
 
             <div id="ex-box">
@@ -52,21 +54,25 @@
             </div>
 
             <div id="to-box">
-                <input placeholder="Pick Currency" list="to" />
-                <datalist id="to"></datalist>
+                <input placeholder="Pick Currency" list="to" id="to-input"/>
+                <datalist id="to">
+                    <option id="eur">EUR</option>
+                </datalist>
             </div>
 
             <div id="convert-box">
                 <i class="fas fa-arrow-circle-right"></i>
             </div>
         </div>
-        <div id="conversation-resilt">
-            <h1>For 50 EUR you can get 55 USD</h1>
+        <div id="conversation-result">
+            <div id="conversation-result-box">
+            </div>
+            <button>Reset</button>
         </div>
     </div>
 
    
     </main>
-    <script src="app.js"></script>
+    <script src="app.js" type="module"></script>
   </body>
 </html>

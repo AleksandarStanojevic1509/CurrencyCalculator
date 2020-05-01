@@ -1,53 +1,104 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-main {    
-    background: linear-gradient(90deg, rgb(241, 243, 127) 0%, rgb(134, 250, 173) 35%, rgba(0,212,255,1) 100%);
-    display: flex;
+main {
+  background: linear-gradient(
+    90deg,
+    rgb(241, 243, 127) 0%,
+    rgb(134, 250, 173) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  display: flex;
 }
-main>div{
-    width: 80%;
-    margin: 2rem auto 1rem auto;
+main > div {
+  width: 80%;
+  margin: 2rem auto 1rem auto;
 }
-#ex-box, #convert-box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#ex-box,
+#convert-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-input{
-    width:100%;
-    font-size: 1.5rem;
-    padding: 0.4rem 0.7rem;
-    border-radius: 0.8rem;
-    border: none;
-    outline: none;
+input {
+  height: 4rem;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.8rem;
+  border: none;
+  outline: none;
 }
-#container{
-    display: grid;
-    grid-template-columns: 3fr 3fr 1fr 3fr 1fr;
-    /* border: 2px solid rgb(83, 83, 83); */
-    padding: 1rem;
-    border-radius: 0.8rem;
-    margin-top: 0.8rem;
-    background-color: rgba(145, 145, 145, 0.596);
+#container {
+  display: grid;
+  grid-template-columns: 3fr 3fr 1fr 3fr 1fr;
+  /* border: 2px solid rgb(83, 83, 83); */
+  padding: 1rem;
+  border-radius: 0.8rem;
+  margin-top: 0.8rem;
+  background-color: rgba(145, 145, 145, 0.596);
 }
-#amount, #from-box, #to-box{
-    margin: auto;
-    width: 95%;
+#amount,
+#from-box,
+#to-box {
+  margin: auto;
+  width: 95%;
 }
-p{
-    font-size: 1.7rem;
-    margin-bottom: 0.3rem ;
-    padding-left: 5%;
+p {
+  font-size: 1.7rem;
+  margin-bottom: 0.3rem;
+  padding-left: 5%;
 }
-i{
-    font-size: 2.5rem;
+i {
+  font-size: 2.5rem;
 }
-#conversation-resilt>h1{
-    text-align: center;
-    margin-top: 3rem;
-    font-size: 3rem;
-    display: none;
+#conversation-result {
+  display: grid;
+  text-align: center;
+}
+#conversation-result-box > h3 {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2rem;
+  display: block;
+  color: rgb(56, 56, 56);
+}
+h3 span {
+  color: rgb(89, 34, 177);
+  text-decoration: underline;
+  font-size: 2.5rem;
+}
+#conversation-result > button {
+  width: 25%;
+  margin: 2rem auto 0;
+  font-size: 1.4rem;
+  display: none;
+  border-radius: 0.8rem;
+  border: none;
+  outline: none;
+  background: white;
+  padding: 0.4rem 0.7rem;
+}
+#conversation-result > button:hover {
+  background-color: rgb(241, 243, 127);
+  cursor: pointer;
+}
+#ex-box i:hover,
+#convert-box i:hover {
+  color: rgb(241, 243, 127);
+  cursor: pointer;
+}
+#conversation-result-box > h5 {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+  display: block;
+  color: rgb(56, 56, 56);
+}
+h5 span {
+  color: rgb(89, 34, 177);
+  text-decoration: underline;
+  font-size: 1.5rem;
 }

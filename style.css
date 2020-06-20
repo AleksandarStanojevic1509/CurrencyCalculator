@@ -4,6 +4,7 @@
   margin: 0;
 }
 main {
+  height: 100vh;
   background: linear-gradient(
     90deg,
     rgb(241, 243, 127) 0%,
@@ -15,6 +16,9 @@ main {
 main > div {
   width: 80%;
   margin: 2rem auto 1rem auto;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #ex-box,
 #convert-box {
